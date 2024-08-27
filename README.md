@@ -1,5 +1,5 @@
-```markdown
 # Device Fingerprint
+```markdown
 
 `device_fingerprint` is a Python library designed to generate a unique digital fingerprint based on the physical characteristics of an electronic device. This includes the device's current battery status, exact system time (with millisecond precision), and the MAC address. The library provides functionality to hash these parameters using SHA-256 and encrypt them using AES encryption for secure data handling.
 
