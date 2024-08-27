@@ -1,5 +1,3 @@
-Certainly! Below is a README file format for the `device_fingerprint` library:
-
 ---
 
 # Device Fingerprint
@@ -17,7 +15,7 @@ Certainly! Below is a README file format for the `device_fingerprint` library:
 To install the `device_fingerprint` library, use `pip`:
 
 ```bash
-pip install device_fingerprint
+pip install device-fingerprint
 ```
 
 ## Usage
@@ -82,15 +80,6 @@ print(f"Decrypted MAC Address: {decrypted_mac}")
 
 - Ensure that your AES encryption key is kept secure and private.
 - The library uses SHA-256 for hashing and AES for encryption to provide secure data handling.
-
-## Contributing
-
-Contributions to `device_fingerprint` are welcome! Please submit issues or pull requests on [GitHub](https://github.com/your-repo/device_fingerprint).
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
 ---
 
 Feel free to adjust the repository links and license details as needed.
