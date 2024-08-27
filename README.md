@@ -1,3 +1,4 @@
+
 ---
 
 # Device Fingerprint
@@ -80,6 +81,7 @@ print(f"Decrypted MAC Address: {decrypted_mac}")
 
 - Ensure that your AES encryption key is kept secure and private.
 - The library uses SHA-256 for hashing and AES for encryption to provide secure data handling.
+
 ---
 
 Feel free to adjust the repository links and license details as needed.
