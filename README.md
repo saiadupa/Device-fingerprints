@@ -1,7 +1,10 @@
-# Device Fingerprint
-```markdown
+Certainly! Below is a README file format for the `device_fingerprint` library:
 
-`device_fingerprint` is a Python library designed to generate a unique digital fingerprint based on the physical characteristics of an electronic device. This includes the device's current battery status, exact system time (with millisecond precision), and the MAC address. The library provides functionality to hash these parameters using SHA-256 and encrypt them using AES encryption for secure data handling.
+---
+
+# Device Fingerprint
+
+`device_fingerprint` is a Python library designed to generate a unique digital fingerprint based on the physical characteristics of an electronic device. It captures details like the device's battery status, exact system time (with millisecond precision), and MAC address. This library also provides secure handling of data by hashing with SHA-256 and encrypting using AES encryption.
 
 ## Features
 
@@ -11,7 +14,7 @@
 
 ## Installation
 
-You can install the package using `pip`:
+To install the `device_fingerprint` library, use `pip`:
 
 ```bash
 pip install device_fingerprint
@@ -21,7 +24,7 @@ pip install device_fingerprint
 
 ### Generating a Fingerprint
 
-Here’s how to use the `device_fingerprint` library to generate a unique fingerprint:
+Here's how to use the `device_fingerprint` library to generate a unique fingerprint:
 
 ```python
 from device_fingerprint import DeviceFingerprint
@@ -48,3 +51,46 @@ print(f"Encrypted MAC Address: {encrypted_mac}")
 decrypted_mac = fingerprint_generator.decrypt_data(encrypted_mac)
 print(f"Decrypted MAC Address: {decrypted_mac}")
 ```
+
+## API Reference
+
+### `DeviceFingerprint`
+
+- **Constructor: `DeviceFingerprint(encryption_key: bytes)`**
+  - Initializes the `DeviceFingerprint` class with the specified AES encryption key.
+  - `encryption_key`: A byte string for AES encryption. Must be 16, 24, or 32 bytes long.
+
+- **Method: `generate_fingerprint()`**
+  - Generates a unique fingerprint based on device characteristics.
+  - Returns: A string representing the unique device fingerprint.
+
+- **Method: `get_mac_address()`**
+  - Retrieves the MAC address of the device.
+  - Returns: A string representing the MAC address.
+
+- **Method: `encrypt_data(data: str)`**
+  - Encrypts the given data using AES encryption.
+  - `data`: A string of data to encrypt.
+  - Returns: A string representing the encrypted data.
+
+- **Method: `decrypt_data(encrypted_data: str)`**
+  - Decrypts the given encrypted data using AES decryption.
+  - `encrypted_data`: A string of encrypted data.
+  - Returns: A string representing the decrypted data.
+
+## Security
+
+- Ensure that your AES encryption key is kept secure and private.
+- The library uses SHA-256 for hashing and AES for encryption to provide secure data handling.
+
+## Contributing
+
+Contributions to `device_fingerprint` are welcome! Please submit issues or pull requests on [GitHub](https://github.com/your-repo/device_fingerprint).
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+---
+
+Feel free to adjust the repository links and license details as needed.
